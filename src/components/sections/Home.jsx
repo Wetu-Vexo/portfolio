@@ -1,17 +1,17 @@
 const Home = () => {
     const groupMember = [
-        { label: "AI Engineer", Name: "Wetu Vexo" ,path :"src/image/wetuLinkedIn2.jpg"},
-        { label: "IoT Engineer",  Name: "Muhammad Tumio",path :"src/image/muhammad-Tumio.png"},
-        { label: "Front End Developer",  Name: "BellaTu Lopez", path :"src/image/BellaTu.jpg"},
-        { label: "Backend Developer",  Name: "TuTu Mamadou",path :"src/image/TuTuMamadou.jpg"},
-        { label: "Data Scientist",  Name: "Shivtu Mei Jing",path :"src/image/TuMeiJing.png"},
-        { label: "Software Developer", Name: "Steve Tu",path :"src/image/SteveTu.png" }
+        { label: "AI Engineer", Name: "Wetu Vexo" ,path :"/image/wetuLinkedIn2.jpg"},
+        { label: "IoT Engineer",  Name: "Muhammad Tumio",path :"/image/muhammad-Tumio.png"},
+        { label: "Front End Developer",  Name: "BellaTu Lopez", path :"/image/BellaTu.jpg"},
+        { label: "Backend Developer",  Name: "TuTu Mamadou",path :"/image/TuTuMamadou.jpg"},
+        { label: "Data Scientist",  Name: "Shivtu Mei Jing",path :"/image/TuMeiJing.png"},
+        { label: "Software Developer", Name: "Steve Tu",path :"/image/SteveTu.png" }
     ]
     return (
         <div className="flex flex-col items-center justify-center min-h-screen px-6 mt-[15%]">
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-5xl w-full">
                 <img 
-                    src="src/image/wetuLinkedIn2.jpg" 
+                    src="/image/wetuLinkedIn2.jpg" 
                     alt="Wetu Vexo" 
                     className="w-64 h-64 object-cover rounded-full shrink-0"
                 />
