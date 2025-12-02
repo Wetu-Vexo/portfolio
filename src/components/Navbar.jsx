@@ -5,22 +5,33 @@ const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full z-40 bg-[rgba(250,250,250,0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
+    <nav className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-lg border-b border-gray-200 shadow-md">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <a href="#home" className="font-mono text-xl font-bold text-black">
+          <Link to="/" className="font-mono text-xl font-bold text-black">
             wetu<span className="text-blue-500">-vexo</span>
-          </a>
+          </Link>
+
+          {/* Desktop Links */}
           <div className="hidden md:flex space-x-6 font-mono text-black">
-            <Link to="/About" className="hover:text-blue-400 transition">About</Link>
-            <Link to="/" className="hover:text-blue-400 transition">Home</Link>
-            <Link to="/projects" className="hover:text-blue-400 transition">Projects</Link>
-            <Link to="/contact" className="hover:text-blue-400 transition">Contact</Link>
+            <Link to="/" className="hover:text-blue-400 transition">
+              Home
+            </Link>
+            <Link to="/about" className="hover:text-blue-400 transition">
+              About
+            </Link>
+            <Link to="/projects" className="hover:text-blue-400 transition">
+              Projects
+            </Link>
+            <Link to="/contact" className="hover:text-blue-400 transition">
+              Contact
+            </Link>
           </div>
 
+          {/* Mobile Hamburger Button */}
           <button
-            className="md:hidden text-black focus:outline-none"
+            className="md:hidden text-black p-2 focus:outline-none"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <svg
@@ -37,19 +48,44 @@ const NavBar = () => {
                 d={
                   menuOpen
                     ? "M6 18L18 6M6 6l12 12" // X icon
-                    : "M4 6h16M4 12h16M4 18h16" // menu icon
+                    : "M4 6h16M4 12h16M4 18h16" // Hamburger
                 }
               />
             </svg>
           </button>
         </div>
 
+        {/* Mobile Menu */}
         {menuOpen && (
-          <div className="md:hidden mt-2 flex flex-col space-y-2 bg-white rounded-lg p-4 font-mono text-black shadow-md">
-            <a href="#home" className="hover:text-blue-400 transition">Home</a>
-            <a href="#about" className="hover:text-blue-400 transition">About</a>
-            <a href="#projects" className="hover:text-blue-400 transition">Projects</a>
-            <a href="#contact" className="hover:text-blue-400 transition">Contact</a>
+          <div className="md:hidden mt-2 flex flex-col space-y-2 bg-white rounded-lg p-4 font-mono text-black shadow-lg z-50">
+            <Link
+              to="/"
+              onClick={() => setMenuOpen(false)}
+              className="hover:text-blue-400 transition"
+            >
+              Home
+            </Link>
+            <Link
+              to="/about"
+              onClick={() => setMenuOpen(false)}
+              className="hover:text-blue-400 transition"
+            >
+              About
+            </Link>
+            <Link
+              to="/projects"
+              onClick={() => setMenuOpen(false)}
+              className="hover:text-blue-400 transition"
+            >
+              Projects
+            </Link>
+            <Link
+              to="/contact"
+              onClick={() => setMenuOpen(false)}
+              className="hover:text-blue-400 transition"
+            >
+              Contact
+            </Link>
           </div>
         )}
       </div>
