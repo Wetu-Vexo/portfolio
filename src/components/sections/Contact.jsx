@@ -29,7 +29,7 @@ const Contact = () => {
           <h1 className="font-bold text-3xl sm:text-4xl">Keep In Touch</h1>
           <p>If you like my work, please reach me on:</p>
           <img
-            src="src/image/contactImage.png"
+            src="image/contactImage.png"
             alt="Contact"
             className="w-3/4 md:w-1/2 h-auto"
           />
