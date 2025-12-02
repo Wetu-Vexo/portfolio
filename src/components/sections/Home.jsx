@@ -11,15 +11,15 @@ const Home = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-12 mt-24">
+    <div className="flex flex-col items-center justify-center min-h-screen px-6 sm:px-8 lg:px-12 mt-24">
       {/* ===== Intro Section ===== */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-5xl w-full">
         <img 
           src="/image/wetuLinkedIn2.jpg" 
           alt="Wetu Vexo" 
-          className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 object-cover rounded-full shadow-lg"
+          className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 object-cover rounded-full shadow-lg mb-6 md:mb-0"
         />
-        <div className="font-mono text-center md:text-left md:ml-8 flex-1">
+        <div className="font-mono text-center md:text-left md:ml-8 flex-1 px-2 sm:px-4">
           <h1 className="text-3xl sm:text-4xl font-bold mb-4">Hello There</h1>
           <p className="text-base sm:text-lg text-justify">
             My name is <span className="font-semibold">Wetu Vexo</span>, and I’m an AI Engineer specializing in Computer Vision and IoT.
@@ -36,7 +36,7 @@ const Home = () => {
         <div className="shadow-xl w-full max-w-6xl h-auto p-6 sm:p-10 flex items-center justify-center rounded-2xl bg-white">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full">
             {groupMember.map((user, index) => (
-              <div key={index} className="text-center flex flex-col items-center transition transform hover:scale-105">
+              <div key={index} className="text-center flex flex-col items-center transition transform hover:scale-105 px-2">
                 <p className="font-bold font-mono mb-2">{user.label}</p>
                 <img
                   src={user.path}
