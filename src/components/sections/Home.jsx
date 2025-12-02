@@ -11,7 +11,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-6 sm:px-8 lg:px-12 mt-24">
+    <div className="flex flex-col items-center justify-center min-h-screen px-6 sm:px-8 lg:px-12 mt-64">
       {/* ===== Intro Section ===== */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-5xl w-full">
         <img 
