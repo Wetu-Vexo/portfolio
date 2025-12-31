@@ -2,10 +2,10 @@ import React from "react";
 
 const OurProject = () => {
     const ProjectVideo = [
-        { label: "Action Recognition", linkTo: "https://www.youtube.com/watch?v=RE72J5R7EJc" },
+        { label: "Action Recognition", linkTo: "https://www.youtube.com/watch?v=Kil6rIbppjo" },
         { label: "Object Detection", linkTo: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
         { label: "Numerical OCR", linkTo: "https://www.youtube.com/watch?v=3JZ_D3ELwOQ" },
-        { label: "Action Recognition", linkTo: "https://www.youtube.com/watch?v=tgbNymZ7vqY" },
+        { label: "Shoes counting", linkTo: "https://www.youtube.com/watch?v=AERVFUuGbsY" },
         { label: "Extra Video", linkTo: "https://www.youtube.com/watch?v=Zi_XLOBDo_Y" }
     ];
 
