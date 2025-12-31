@@ -3,10 +3,10 @@ import React from "react";
 const OurProject = () => {
     const ProjectVideo = [
         { label: "Action Recognition", linkTo: "https://www.youtube.com/watch?v=Kil6rIbppjo" },
-        { label: "Object Detection", linkTo: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
+        { label: "Face recognition Door Lock", linkTo: "https://www.youtube.com/watch?v=8N2M0KuJCKE" },
         { label: "Numerical OCR", linkTo: "https://www.youtube.com/watch?v=3JZ_D3ELwOQ" },
         { label: "Shoes counting", linkTo: "https://www.youtube.com/watch?v=AERVFUuGbsY" },
-        { label: "Extra Video", linkTo: "https://www.youtube.com/watch?v=Zi_XLOBDo_Y" }
+        { label: "Object Detection", linkTo: "https://www.youtube.com/watch?v=YzyN5_p5RP8" }
     ];
 
     const getThumbnail = (url) => {
